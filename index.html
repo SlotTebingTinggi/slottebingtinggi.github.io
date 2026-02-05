@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PENJUDI.COM – Platform Hiburan Digital Modern</title>
+<meta name="description" content="PENJUDI.COM adalah platform hiburan digital modern, akses cepat, dan tampilan premium.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://domaintester.com">
+
+<!-- Favicon -->
+<link rel="icon" href="https://imgstore.org/a/6hud24k15d53" type="image/x-icon">
+
+<style>
+:root{
+  --yellow:#facc15;
+  --yellow-soft:#fde68a;
+  --dark:#111827;
+  --text:#111827;
+}
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  background:linear-gradient(180deg,#facc15,#fde68a);
+  color:var(--text);
+}
+
+/* ================= HEADER ================= */
+header{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:100;
+  background:rgba(250,204,21,.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.top-nav{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.top-nav img{height:42px}
+
+.menu-links{
+  list-style:none;
+  display:flex;
+  gap:28px;
+  margin:0;padding:0;
+}
+
+.menu-links a{
+  color:#111827;
+  text-decoration:none;
+  font-weight:800;
+}
+
+.auth-buttons{
+  display:flex;
+  gap:10px;
+}
+
+.auth-buttons a{
+  padding:8px 20px;
+  border-radius:20px;
+  font-weight:900;
+  font-size:14px;
+  text-decoration:none;
+  background:#111827;
+  color:var(--yellow);
+}
+
+/* ================= HERO ================= */
+main{padding-top:120px}
+
+.hero{
+  max-width:1200px;
+  margin:100px auto 160px;
+  padding:0 24px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:60px;
+  align-items:center;
+}
+
+.hero h1{
+  font-size:3.8rem;
+  margin:0 0 18px;
+}
+
+.hero p{
+  max-width:520px;
+  line-height:1.8;
+  color:#374151;
+  margin-bottom:36px;
+}
+
+.cta{
+  display:inline-block;
+  padding:18px 56px;
+  border-radius:999px;
+  background:#111827;
+  color:var(--yellow);
+  font-weight:900;
+  text-decoration:none;
+  box-shadow:0 18px 60px rgba(0,0,0,.25);
+}
+
+.hero-banner{
+  width:832px;
+  height:420px;
+  border-radius:28px;
+  background:url("https://imgstore.org/a/6hw03q7sfxhw") center/cover no-repeat;
+  box-shadow:0 30px 80px rgba(0,0,0,.35);
+}
+
+/* ================= SECTION ================= */
+section{
+  max-width:1200px;
+  margin:0 auto 160px;
+  padding:0 24px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:72px;
+}
+
+.section-title h2{
+  font-size:2.6rem;
+  margin-bottom:12px;
+}
+
+/* ================= MENU GRID ================= */
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+}
+
+.menu-card{
+  background:#fff;
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.25);
+  transition:.3s;
+}
+
+.menu-card:hover{
+  transform:translateY(-12px);
+}
+
+.menu-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
+}
+
+.menu-card span{
+  display:block;
+  padding:22px;
+  text-align:center;
+  font-weight:900;
+  background:#111827;
+  color:#facc15;
+  letter-spacing:.8px;
+}
+
+/* ================= KEUNGGULAN (ACCORDION) ================= */
+.accordion{
+  max-width:900px;
+  margin:0 auto;
+}
+
+.acc-item{
+  margin-bottom:16px;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.acc-title{
+  width:100%;
+  padding:18px 24px;
+  font-size:18px;
+  font-weight:900;
+  text-align:left;
+  background:#111827;
+  color:#facc15;
+  border:none;
+  cursor:pointer;
+}
+
+.acc-content{
+  max-height:0;
+  overflow:hidden;
+  background:#fff;
+  transition:max-height .4s ease;
+}
+
+.acc-content p{
+  margin:0;
+  padding:20px 24px;
+  color:#111827;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#111827;
+  color:#fde68a;
+  padding:80px 24px;
+}
+
+.footer-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:56px;
+}
+
+.footer-grid h4{color:#facc15}
+
+.footer-grid a{
+  display:block;
+  color:#fde68a;
+  text-decoration:none;
+  margin:8px 0;
+}
+
+.copy{
+  text-align:center;
+  margin-top:56px;
+  font-size:.9rem;
+}
+
+/* ================= RESPONSIVE TAMBAHAN (AUTO) ================= */
+@media (max-width:768px){
+  header{position:sticky}
+  .menu-links{display:none}
+  main{padding-top:24px}
+  .hero{grid-template-columns:1fr;text-align:center;margin:40px auto 120px}
+  .hero h1{font-size:2.2rem}
+  .hero p{max-width:100%;font-size:14px}
+  .hero-banner{width:100%;height:220px}
+  .menu-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;text-align:center}
+}
+
+@media (min-width:769px) and (max-width:1024px){
+  .hero{grid-template-columns:1fr;text-align:center}
+  .menu-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="top-nav">
+    <img src="https://imgstore.org/a/6hw1kbayzurc">
+    <ul class="menu-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#menu">Game</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#">VIP</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="#">Login</a>
+      <a href="#">Daftar</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div>
+      <h1>PENJUDI.COM</h1>
+      <p>Website hiburan digital dengan tampilan premium, akses cepat, dan nuansa eksklusif.</p>
+      <a class="cta" href="#">MASUK SEKARANG</a>
+    </div>
+    <div class="hero-banner"></div>
+  </div>
+
+  <section id="menu">
+    <div class="section-title">
+      <h2>Menu Utama</h2>
+      <p>Gunakan gambar berbeda untuk setiap kategori</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="https://imgstore.org/a/6hw285ebnka2">
+        <span>SLOT</span>
+      </div>
+      <div class="menu-card">
+        <img src="https://imgstore.org/a/6hw4oaixaaor">
+        <span>LIVE CASINO</span>
+      </div>
+      <div class="menu-card">
+        <img src="https://imgstore.org/a/6hw4o36h24qn">
+        <span>SPORT</span>
+      </div>
+      <div class="menu-card">
+        <img src="https://imgstore.org/a/6hw3xgkqa5h9">
+        <span>TOGEL</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>Keunggulan</h2>
+      <p>Dirancang seperti website judol profesional</p>
+    </div>
+
+    <div class="accordion">
+      <div class="acc-item">
+        <button class="acc-title">Akses Cepat</button>
+        <div class="acc-content"><p>Struktur ringan dan optimal untuk semua perangkat.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-title">Tampilan Premium</button>
+        <div class="acc-content"><p>Desain gelap elegan dengan fokus visual.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-title">Responsif</button>
+        <div class="acc-content"><p>Tampilan rapi di desktop dan mobile.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-title">Sistem Stabil</button>
+        <div class="acc-content"><p>Siap dikembangkan jangka panjang.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-title">
+    <h2>Tentang PENJUDI.COM</h2>
+    <p>Platform hiburan digital dengan fokus pada pengalaman pengguna dan performa website.</p>
+  </section>
+
+  <section id="trust" class="section-title">
+    <h2>Komitmen Kami</h2>
+    <p>Menjaga kualitas tampilan, sistem, dan kenyamanan akses.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>PENJUDI.COM</h4>
+      <p>Platform hiburan digital premium dengan sistem cepat dan tampilan eksklusif.</p>
+    </div>
+    <div>
+      <h4>Menu</h4>
+      <a href="#">Home</a>
+      <a href="#menu">Game</a>
+      <a href="#about">Tentang</a>
+    </div>
+    <div>
+      <h4>Member</h4>
+      <a href="https://domaintester.com">Login</a>
+      <a href="https://domaintester.com">Daftar</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="#">Bantuan</a>
+      <a href="#">Kontak</a>
+    </div>
+  </div>
+  <div class="copy">© 2026 PENJUDI.COM — All Rights Reserved</div>
+</footer>
+
+<script>
+document.querySelectorAll('.acc-title').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const content = btn.nextElementSibling;
+    document.querySelectorAll('.acc-content').forEach(c=>{
+      if(c!==content) c.style.maxHeight=null;
+    });
+    content.style.maxHeight = content.style.maxHeight
+      ? null
+      : content.scrollHeight + "px";
+  });
+});
+</script>
+
+</body>
+</html>
