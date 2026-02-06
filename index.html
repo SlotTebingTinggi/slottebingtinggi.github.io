@@ -1,398 +1,844 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PENJUDI.COM situs gaming resmi dengan sistem fair play. Minimal deposit 5 ribu, mobile friendly, jackpot progresif setiap hari.">
+    <meta name="keywords" content="gaming, slot online, live casino, sports betting, poker online">
+    <meta name="author" content="SEO DIRGA">
+    
+    <title>PENJUDI.COM – Situs Gaming Resmi & Fair Play</title>
+    
 
-<title>PENJUDI.COM – Platform Hiburan Digital Modern</title>
-<meta name="description" content="PENJUDI.COM adalah platform hiburan digital modern, akses cepat, dan tampilan premium.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://domaintester.com">
-
-<!-- Favicon -->
+    <!-- Favicon -->
+  <link href="https://imgstore.org/a/6hud24k15d53" rel="icon" sizes="any"/>
 <link rel="icon" href="https://imgstore.org/a/6hud24k15d53" type="image/x-icon">
 
-<style>
-:root{
-  --yellow:#facc15;
-  --yellow-soft:#fde68a;
-  --dark:#111827;
-  --text:#111827;
-}
-*{box-sizing:border-box}
+    <style>
+        /* ==================== RESET & BASE ==================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        }
 
-body{
-  margin:0;
-  font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
-  background:linear-gradient(180deg,#facc15,#fde68a);
-  color:var(--text);
-}
+        body {
+            background: linear-gradient(135deg, #facc15 0%, #fbbf24 100%);
+            color: #e5e7eb;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
 
-/* ================= HEADER ================= */
-header{
-  position:fixed;
-  top:0;left:0;right:0;
-  z-index:100;
-  background:rgba(250,204,21,.9);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid rgba(0,0,0,.08);
-}
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
 
-.top-nav{
-  max-width:1200px;
-  margin:auto;
-  padding:18px 24px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
 
-.top-nav img{height:42px}
+        /* ==================== CONTAINER ==================== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-.menu-links{
-  list-style:none;
-  display:flex;
-  gap:28px;
-  margin:0;padding:0;
-}
+        /* ==================== TOP BAR ==================== */
+        .topbar {
+            background: #020617;
+            border-bottom: 2px solid #1f2937;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
 
-.menu-links a{
-  color:#111827;
-  text-decoration:none;
-  font-weight:800;
-}
+        .topbar .wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.auth-buttons{
-  display:flex;
-  gap:10px;
-}
+        .brand {
+            font-weight: 900;
+            font-size: 24px;
+            color: #facc15;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 1px;
+        }
 
-.auth-buttons a{
-  padding:8px 20px;
-  border-radius:20px;
-  font-weight:900;
-  font-size:14px;
-  text-decoration:none;
-  background:#111827;
-  color:var(--yellow);
-}
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
 
-/* ================= HERO ================= */
-main{padding-top:120px}
+        .actions a {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: transform 0.2s ease;
+        }
 
-.hero{
-  max-width:1200px;
-  margin:100px auto 160px;
-  padding:0 24px;
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:60px;
-  align-items:center;
-}
+        .actions a:hover {
+            transform: translateY(-2px);
+        }
 
-.hero h1{
-  font-size:3.8rem;
-  margin:0 0 18px;
-}
+        .login {
+            background: #1f2937;
+            border: 1px solid #374151;
+        }
 
-.hero p{
-  max-width:520px;
-  line-height:1.8;
-  color:#374151;
-  margin-bottom:36px;
-}
+        .login:hover {
+            background: #374151;
+        }
 
-.cta{
-  display:inline-block;
-  padding:18px 56px;
-  border-radius:999px;
-  background:#111827;
-  color:var(--yellow);
-  font-weight:900;
-  text-decoration:none;
-  box-shadow:0 18px 60px rgba(0,0,0,.25);
-}
+        .register {
+            background: linear-gradient(135deg, #facc15, #eab308);
+            color: #000;
+            font-weight: 800;
+            box-shadow: 0 4px 10px rgba(250, 204, 21, 0.3);
+        }
 
-.hero-banner{
-  width:832px;
-  height:420px;
-  border-radius:28px;
-  background:url("https://imgstore.org/a/6hw03q7sfxhw") center/cover no-repeat;
-  box-shadow:0 30px 80px rgba(0,0,0,.35);
-}
+        .register:hover {
+            box-shadow: 0 6px 15px rgba(250, 204, 21, 0.5);
+        }
 
-/* ================= SECTION ================= */
-section{
-  max-width:1200px;
-  margin:0 auto 160px;
-  padding:0 24px;
-}
+        /* ==================== BANNER SLIDER ==================== */
+        .banner {
+            margin: 20px 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
 
-.section-title{
-  text-align:center;
-  margin-bottom:72px;
-}
+        .banner-track {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
 
-.section-title h2{
-  font-size:2.6rem;
-  margin-bottom:12px;
-}
+        .banner-track::-webkit-scrollbar {
+            display: none;
+        }
 
-/* ================= MENU GRID ================= */
-.menu-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:40px;
-}
+        .banner-item {
+            min-width: 100%;
+            height: 280px;
+            scroll-snap-align: start;
+            background: linear-gradient(135deg, #1f2937, #111827);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
 
-.menu-card{
-  background:#fff;
-  border-radius:28px;
-  overflow:hidden;
-  box-shadow:0 30px 80px rgba(0,0,0,.25);
-  transition:.3s;
-}
+        .banner-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.menu-card:hover{
-  transform:translateY(-12px);
-}
+        .banner-placeholder {
+            font-size: 64px;
+            opacity: 0.3;
+        }
 
-.menu-card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  display:block;
-}
+        /* ==================== JACKPOT DISPLAY ==================== */
+        .jackpot-section {
+            margin: 24px 0;
+            padding: 20px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #0f172a, #020617);
+            border: 2px solid #1f2937;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
 
-.menu-card span{
-  display:block;
-  padding:22px;
-  text-align:center;
-  font-weight:900;
-  background:#111827;
-  color:#facc15;
-  letter-spacing:.8px;
-}
+        .jackpot-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(250, 204, 21, 0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
 
-/* ================= KEUNGGULAN (ACCORDION) ================= */
-.accordion{
-  max-width:900px;
-  margin:0 auto;
-}
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
 
-.acc-item{
-  margin-bottom:16px;
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
+        .jackpot-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
 
-.acc-title{
-  width:100%;
-  padding:18px 24px;
-  font-size:18px;
-  font-weight:900;
-  text-align:left;
-  background:#111827;
-  color:#facc15;
-  border:none;
-  cursor:pointer;
-}
+        .jackpot-label {
+            font-weight: 700;
+            font-size: 14px;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-.acc-content{
-  max-height:0;
-  overflow:hidden;
-  background:#fff;
-  transition:max-height .4s ease;
-}
+        .jackpot-amount {
+            font-size: 28px;
+            font-weight: 900;
+            color: #facc15;
+            text-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+            font-variant-numeric: tabular-nums;
+        }
 
-.acc-content p{
-  margin:0;
-  padding:20px 24px;
-  color:#111827;
-}
+        /* ==================== NAVIGATION TABS ==================== */
+        .nav-tabs {
+            display: flex;
+            gap: 12px;
+            margin: 20px 0;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
 
-/* ================= FOOTER ================= */
-footer{
-  background:#111827;
-  color:#fde68a;
-  padding:80px 24px;
-}
+        .nav-tabs::-webkit-scrollbar {
+            height: 3px;
+        }
 
-.footer-grid{
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:56px;
-}
+        .nav-tabs::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 3px;
+        }
 
-.footer-grid h4{color:#facc15}
+        .nav-tabs a {
+            white-space: nowrap;
+            padding: 10px 20px;
+            border-radius: 999px;
+            border: 2px solid #1f2937;
+            background: #020617;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
 
-.footer-grid a{
-  display:block;
-  color:#fde68a;
-  text-decoration:none;
-  margin:8px 0;
-}
+        .nav-tabs a:hover {
+            background: #1f2937;
+            border-color: #374151;
+        }
 
-.copy{
-  text-align:center;
-  margin-top:56px;
-  font-size:.9rem;
-}
+        .nav-tabs a.active {
+            background: linear-gradient(135deg, #facc15, #eab308);
+            color: #000;
+            border-color: #facc15;
+            font-weight: 800;
+        }
 
-/* ================= RESPONSIVE TAMBAHAN (AUTO) ================= */
-@media (max-width:768px){
-  header{position:sticky}
-  .menu-links{display:none}
-  main{padding-top:24px}
-  .hero{grid-template-columns:1fr;text-align:center;margin:40px auto 120px}
-  .hero h1{font-size:2.2rem}
-  .hero p{max-width:100%;font-size:14px}
-  .hero-banner{width:100%;height:220px}
-  .menu-grid{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr;text-align:center}
-}
+        /* ==================== GAMES GRID ==================== */
+        .games-section {
+            margin: 30px 0;
+            padding-bottom: 40px;
+        }
 
-@media (min-width:769px) and (max-width:1024px){
-  .hero{grid-template-columns:1fr;text-align:center}
-  .menu-grid{grid-template-columns:repeat(2,1fr)}
-  .footer-grid{grid-template-columns:repeat(2,1fr)}
-}
-</style>
+        .section-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #020617;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .game-card {
+            background: #020617;
+            border: 2px solid #1f2937;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(250, 204, 21, 0.3);
+            border-color: #facc15;
+        }
+
+        .game-card:active {
+            transform: translateY(-2px);
+        }
+
+        .game-thumb {
+            height: 180px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1f2937, #111827);
+        }
+
+        .game-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover .game-thumb img {
+            transform: scale(1.1);
+        }
+
+        .game-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(135deg, #facc15, #eab308);
+            color: #000;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 5px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-body {
+            padding: 16px;
+        }
+
+        .game-title {
+            font-weight: 800;
+            font-size: 16px;
+            margin-bottom: 6px;
+            color: #e5e7eb;
+        }
+
+        .game-provider {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-bottom: 4px;
+        }
+
+        .game-rtp {
+            font-size: 12px;
+            color: #10b981;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .play-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            text-align: center;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #1f2937, #111827);
+            border: 2px solid #374151;
+            font-weight: 700;
+            color: #facc15;
+            transition: all 0.3s ease;
+        }
+
+        .play-btn:hover {
+            background: linear-gradient(135deg, #facc15, #eab308);
+            color: #000;
+            border-color: #facc15;
+        }
+
+        /* ==================== INFO CARDS ==================== */
+        .info-section {
+            margin: 40px 0;
+        }
+
+        .content-card {
+            background: #020617;
+            border: 2px solid #1f2937;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-card h3 {
+            font-size: 18px;
+            color: #facc15;
+            margin-bottom: 12px;
+            border-left: 4px solid #facc15;
+            padding-left: 12px;
+        }
+
+        .content-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #d1d5db;
+        }
+
+        /* ==================== TRUST BADGES ==================== */
+        .trust-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .trust-badge {
+            text-align: center;
+            padding: 20px 15px;
+            border-radius: 12px;
+            background: #020617;
+            border: 2px solid #1f2937;
+            font-weight: 700;
+            font-size: 13px;
+            transition: all 0.3s ease;
+        }
+
+        .trust-badge:hover {
+            border-color: #facc15;
+            transform: translateY(-3px);
+        }
+
+        .trust-badge span {
+            display: block;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        /* ==================== FOOTER ==================== */
+        .main-footer {
+            border-top: 2px solid #1f2937;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #020617;
+            background: rgba(2, 6, 23, 0.1);
+            margin-top: 40px;
+        }
+
+        .main-footer p {
+            margin-bottom: 8px;
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: #6b7280;
+            margin-top: 12px;
+            font-style: italic;
+        }
+
+        /* ==================== BOTTOM NAVIGATION ==================== */
+        .bottom-nav {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #020617;
+            border-top: 2px solid #1f2937;
+            display: flex;
+            justify-content: space-around;
+            z-index: 100;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .bottom-nav a {
+            flex: 1;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 11px;
+            color: #9ca3af;
+            transition: all 0.3s ease;
+            border-top: 3px solid transparent;
+        }
+
+        .bottom-nav a:hover {
+            color: #d1d5db;
+        }
+
+        .bottom-nav a.active {
+            color: #facc15;
+            border-top-color: #facc15;
+            background: rgba(250, 204, 21, 0.05);
+        }
+
+        .bottom-nav a span {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 640px) {
+            .brand {
+                font-size: 20px;
+            }
+
+            .actions a {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+
+            .jackpot-amount {
+                font-size: 20px;
+            }
+
+            .jackpot-label {
+                font-size: 11px;
+            }
+
+            .banner-item {
+                height: 200px;
+            }
+        }
+
+        /* ==================== ANIMATIONS ==================== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .game-card {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .game-card:nth-child(1) { animation-delay: 0.1s; }
+        .game-card:nth-child(2) { animation-delay: 0.2s; }
+        .game-card:nth-child(3) { animation-delay: 0.3s; }
+        .game-card:nth-child(4) { animation-delay: 0.4s; }
+        .game-card:nth-child(5) { animation-delay: 0.5s; }
+        .game-card:nth-child(6) { animation-delay: 0.6s; }
+    </style>
 </head>
-
 <body>
 
-<header>
-  <nav class="top-nav">
-    <img src="https://imgstore.org/a/6hw1kbayzurc">
-    <ul class="menu-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#menu">Game</a></li>
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#">VIP</a></li>
-    </ul>
-    <div class="auth-buttons">
-      <a href="#">Login</a>
-      <a href="#">Daftar</a>
-    </div>
-  </nav>
-</header>
+    
+<body>
+    <!-- ==================== TOP BAR ==================== -->
+    <header class="topbar">
+        <div class="container wrap">
+            <div class="brand">🎰 PENJUDI.COM</div>
+            <div class="actions">
+                <a href="#login" class="login">LOGIN</a>
+                <a href="#register" class="register">DAFTAR</a>
+            </div>
+        </div>
+    </header>
+    
 
-<main>
-  <div class="hero">
-    <div>
-      <h1>PENJUDI.COM</h1>
-      <p>Website hiburan digital dengan tampilan premium, akses cepat, dan nuansa eksklusif.</p>
-      <a class="cta" href="#">MASUK SEKARANG</a>
-    </div>
-    <div class="hero-banner"></div>
-  </div>
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="container">
+        <!-- BANNER SLIDER -->
+        <section class="banner">
+            <div class="banner-track">
+    <div class="banner-item"><img src="https://imgstore.org/a/6hvuvyq76hq2"></div>
+    <div class="banner-item"><img src="https://imgstore.org/a/6hvuvyq76hq2"></div>
+    <div class="banner-item"><img src="https://imgstore.org/a/6hvuvyq76hq2"></div>
+            </div>
+        </section>
 
-  <section id="menu">
-    <div class="section-title">
-      <h2>Menu Utama</h2>
-      <p>Gunakan gambar berbeda untuk setiap kategori</p>
-    </div>
+        <!-- PROGRESSIVE JACKPOT -->
+        <section class="jackpot-section">
+            <div class="jackpot-content">
+                <div class="jackpot-label">💰 Progressive Jackpot</div>
+                <div class="jackpot-amount" id="jackpot">IDR 0</div>
+            </div>
+        </section>
 
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="https://imgstore.org/a/6hw285ebnka2">
-        <span>SLOT</span>
-      </div>
-      <div class="menu-card">
-        <img src="https://imgstore.org/a/6hw4oaixaaor">
-        <span>LIVE CASINO</span>
-      </div>
-      <div class="menu-card">
-        <img src="https://imgstore.org/a/6hw4o36h24qn">
-        <span>SPORT</span>
-      </div>
-      <div class="menu-card">
-        <img src="https://imgstore.org/a/6hw3xgkqa5h9">
-        <span>TOGEL</span>
-      </div>
-    </div>
-  </section>
+        <!-- NAVIGATION TABS -->
+        <nav class="nav-tabs">
+            <a href="#all" class="active">🏠 All Games</a>
+            <a href="#slots">🎰 Slots</a>
+            <a href="#live">📺 Live Casino</a>
+            <a href="#sports">⚽ Sports</a>
+            <a href="#poker">🃏 Poker</a>
+            <a href="#fishing">🎣 Fishing</a>
+        </nav>
 
-  <section>
-    <div class="section-title">
-      <h2>Keunggulan</h2>
-      <p>Dirancang seperti website judol profesional</p>
-    </div>
+        <!-- GAMES GRID -->
+        <section class="games-section">
+            <h2 class="section-title">🔥 Popular Games</h2>
+            <div class="games-grid">
+                <!-- Game 1 -->
+                <article class="game-card">
+                    <div class="game-thumb">
+                        <span class="banner-placeholder"></span><img src="https://imgstore.org/a/6hv5c4q3a8bu"></div>
+                        <div class="game-badge">HOT</div> 
+                        <div class="game-body">
+                        <div class="game-title">Gates of Olympus</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                        <div class="game-rtp">🎯 RTP 96.5%</div>
+                        <a href="#play" class="play-btn">PLAY NOW</a>
+                    </div>
+                </article>
 
-    <div class="accordion">
-      <div class="acc-item">
-        <button class="acc-title">Akses Cepat</button>
-        <div class="acc-content"><p>Struktur ringan dan optimal untuk semua perangkat.</p></div>
-      </div>
-      <div class="acc-item">
-        <button class="acc-title">Tampilan Premium</button>
-        <div class="acc-content"><p>Desain gelap elegan dengan fokus visual.</p></div>
-      </div>
-      <div class="acc-item">
-        <button class="acc-title">Responsif</button>
-        <div class="acc-content"><p>Tampilan rapi di desktop dan mobile.</p></div>
-      </div>
-      <div class="acc-item">
-        <button class="acc-title">Sistem Stabil</button>
-        <div class="acc-content"><p>Siap dikembangkan jangka panjang.</p></div>
-      </div>
-    </div>
-  </section>
+                <!-- Game 2 -->
+                <article class="game-card">
+                    <div class="game-thumb">
+                        <span class="banner-placeholder">🍭</span>
+                        <div class="game-badge">NEW</div>
+                    </div>
+                    <div class="game-body">
+                        <div class="game-title">Sweet Bonanza</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                        <div class="game-rtp">🎯 RTP 96.4%</div>
+                        <a href="#play" class="play-btn">PLAY NOW</a>
+                    </div>
+                </article>
 
-  <section id="about" class="section-title">
-    <h2>Tentang PENJUDI.COM</h2>
-    <p>Platform hiburan digital dengan fokus pada pengalaman pengguna dan performa website.</p>
-  </section>
+                <!-- Game 3 -->
+                <article class="game-card">
+                    <div class="game-thumb">
+                        <span class="banner-placeholder">🀄</span>
+                        <div class="game-badge">HOT</div>
+                    </div>
+                    <div class="game-body">
+                        <div class="game-title">Mahjong Ways 2</div>
+                        <div class="game-provider">PG Soft</div>
+                        <div class="game-rtp">🎯 RTP 98.6%</div>
+                        <a href="#play" class="play-btn">PLAY NOW</a>
+                    </div>
+                </article>
 
-  <section id="trust" class="section-title">
-    <h2>Komitmen Kami</h2>
-    <p>Menjaga kualitas tampilan, sistem, dan kenyamanan akses.</p>
-  </section>
-</main>
+                <!-- Game 4 -->
+                <article class="game-card">
+                    <div class="game-thumb">
+                        <span class="banner-placeholder">💎</span>
+                    </div>
+                    <div class="game-body">
+                        <div class="game-title">Starlight Princess</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                        <div class="game-rtp">🎯 RTP 96.5%</div>
+                        <a href="#play" class="play-btn">PLAY NOW</a>
+                    </div>
+                </article>
 
-<footer>
-  <div class="footer-grid">
-    <div>
-      <h4>PENJUDI.COM</h4>
-      <p>Platform hiburan digital premium dengan sistem cepat dan tampilan eksklusif.</p>
-    </div>
-    <div>
-      <h4>Menu</h4>
-      <a href="#">Home</a>
-      <a href="#menu">Game</a>
-      <a href="#about">Tentang</a>
-    </div>
-    <div>
-      <h4>Member</h4>
-      <a href="https://domaintester.com">Login</a>
-      <a href="https://domaintester.com">Daftar</a>
-    </div>
-    <div>
-      <h4>Support</h4>
-      <a href="#">Bantuan</a>
-      <a href="#">Kontak</a>
-    </div>
-  </div>
-  <div class="copy">© 2026 PENJUDI.COM — All Rights Reserved</div>
-</footer>
+                <!-- Game 5 -->
+                <article class="game-card">
+                    <div class="game-thumb">
+                        <span class="banner-placeholder">🐉</span>
+                        <div class="game-badge">NEW</div>
+                    </div>
+                    <div class="game-body">
+                        <div class="game-title">Dragon Hatch</div>
+                        <div class="game-provider">PG Soft</div>
+                        <div class="game-rtp">🎯 RTP 97.2%</div>
+                        <a href="#play" class="play-btn">PLAY NOW</a>
+                    </div>
+                </article>
 
-<script>
-document.querySelectorAll('.acc-title').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const content = btn.nextElementSibling;
-    document.querySelectorAll('.acc-content').forEach(c=>{
-      if(c!==content) c.style.maxHeight=null;
-    });
-    content.style.maxHeight = content.style.maxHeight
-      ? null
-      : content.scrollHeight + "px";
-  });
-});
-</script>
+                <!-- Game 6 -->
+                <article class="game-card">
+                    <div class="game-thumb">
+                        <span class="banner-placeholder">🌙</span>
+                    </div>
+                    <div class="game-body">
+                        <div class="game-title">Aztec Gems</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                        <div class="game-rtp">🎯 RTP 96.5%</div>
+                        <a href="#play" class="play-btn">PLAY NOW</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
+        <!-- INFO SECTION -->
+        <section class="info-section">
+            <article class="content-card">
+                <h3>🎮 Tentang PENJUDI.COM</h3>
+                <p>
+                    Platform gaming online terpercaya dengan koleksi permainan terlengkap. 
+                    Kami menyediakan berbagai jenis permainan dari provider ternama dengan 
+                    sistem yang fair dan transparan. Nikmati pengalaman bermain yang aman 
+                    dan nyaman dengan dukungan customer service 24/7.
+                </p>
+            </article>
+
+            <article class="content-card">
+                <h3>⚡ Keunggulan Platform</h3>
+                <p>
+                    Sistem deposit dan withdrawal yang cepat dengan minimal deposit hanya 
+                    5 ribu rupiah. Interface mobile-friendly yang dapat diakses dari 
+                    berbagai device. Progressive jackpot yang terus bertambah setiap hari. 
+                    Bonus dan promo menarik untuk member baru maupun member setia.
+                </p>
+            </article>
+
+            <article class="content-card">
+                <h3>🎯 Tips & Strategi</h3>
+                <p>
+                    Pahami RTP (Return to Player) setiap game untuk memaksimalkan peluang. 
+                    Kelola bankroll dengan bijak dan tentukan batas bermain. Manfaatkan 
+                    bonus dan promo yang tersedia. Bermain dengan santai dan tidak terburu-buru 
+                    untuk hasil yang lebih optimal.
+                </p>
+            </article>
+        </section>
+
+        <!-- TRUST BADGES -->
+        <section class="trust-section">
+            <div class="trust-badge">
+                <span>🔒</span>
+                SSL Secure
+            </div>
+            <div class="trust-badge">
+                <span>⚡</span>
+                Fast Loading
+            </div>
+            <div class="trust-badge">
+                <span>📱</span>
+                Mobile Friendly
+            </div>
+            <div class="trust-badge">
+                <span>💳</span>
+                Multi Payment
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="main-footer">
+        <p><strong>© 2026 PENJUDI.COM</strong> • Developed by <strong>SEO DIRGA</strong></p>
+        <p>Platform Gaming Terpercaya & Fair Play</p>
+        <p class="disclaimer">
+            ⚠️ Disclaimer: Website ini hanya untuk demonstrasi. 
+            Tidak ada fungsi taruhan atau transaksi uang asli.
+        </p>
+    </footer>
+
+    <!-- ==================== BOTTOM NAVIGATION ==================== -->
+    <nav class="bottom-nav">
+        <a href="#home" class="active">
+            <span>🏠</span>
+            Home
+        </a>
+        <a href="#slots">
+            <span>🎰</span>
+            Slots
+        </a>
+        <a href="#live">
+            <span>📺</span>
+            Live
+        </a>
+        <a href="#account">
+            <span>👤</span>
+            Account
+        </a>
+    </nav>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // ========== PROGRESSIVE JACKPOT ==========
+        const STORAGE_KEY = "PENJUDI_JACKPOT";
+        
+        // Inisialisasi nilai jackpot
+        let jackpotValue = localStorage.getItem(STORAGE_KEY) 
+            ? parseInt(localStorage.getItem(STORAGE_KEY))
+            : Math.floor(Math.random() * 200000000) + 400000000;
+
+        // Format currency ke IDR
+        function formatIDR(number) {
+            return "IDR " + number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+
+        // Update jackpot setiap 350ms
+        const jackpotInterval = setInterval(() => {
+            // Increment random antara 800 - 8800
+            const increment = Math.floor(Math.random() * 8000) + 800;
+            jackpotValue += increment;
+            
+            // Simpan ke localStorage
+            localStorage.setItem(STORAGE_KEY, jackpotValue);
+            
+            // Update display
+            const jackpotElement = document.getElementById("jackpot");
+            if (jackpotElement) {
+                jackpotElement.textContent = formatIDR(jackpotValue);
+            }
+        }, 350);
+
+        // Initial display
+        document.getElementById("jackpot").textContent = formatIDR(jackpotValue);
+
+        // ========== BANNER AUTO SCROLL ==========
+        let bannerIndex = 0;
+        const bannerTrack = document.querySelector('.banner-track');
+        const bannerItems = document.querySelectorAll('.banner-item');
+        
+        if (bannerTrack && bannerItems.length > 1) {
+            setInterval(() => {
+                bannerIndex = (bannerIndex + 1) % bannerItems.length;
+                bannerTrack.scrollTo({
+                    left: bannerItems[bannerIndex].offsetLeft,
+                    behavior: 'smooth'
+                });
+            }, 5000);
+        }
+
+        // ========== SMOOTH SCROLL FOR ANCHOR LINKS ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ========== ACTIVE NAV HIGHLIGHT ==========
+        const navLinks = document.querySelectorAll('.nav-tabs a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // ========== BOTTOM NAV ACTIVE STATE ==========
+        const bottomNavLinks = document.querySelectorAll('.bottom-nav a');
+        bottomNavLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                bottomNavLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // ========== CLEANUP ON PAGE UNLOAD ==========
+        window.addEventListener('beforeunload', () => {
+            clearInterval(jackpotInterval);
+        });
+
+        // ========== CONSOLE MESSAGE ==========
+        console.log('%c🎰 PENJUDI.COM', 'font-size: 24px; color: #facc15; font-weight: bold;');
+        console.log('%cWebsite Demo - No Real Transactions', 'font-size: 14px; color: #9ca3af;');
+        console.log('%cDeveloped by SEO DIRGA', 'font-size: 12px; color: #6b7280;');
+    </script>
 </body>
 </html>
